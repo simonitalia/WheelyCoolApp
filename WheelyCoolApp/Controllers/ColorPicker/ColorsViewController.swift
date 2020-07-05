@@ -38,7 +38,7 @@ class ColorsViewController: UIViewController {
             //save colors to user defaults
             DataPersistenceController.shared.save(colors: colors)
             
-            //update button state
+            //update done button state
             if colors.count > 2 {
                 delegate?.doneButtonState(enabled: true)
             
@@ -46,6 +46,7 @@ class ColorsViewController: UIViewController {
                 delegate?.doneButtonState(enabled: false)
             }
             
+            //advise delegate to update colors array
             delegate?.updateSelectedColors(to: colors)
         }
     }

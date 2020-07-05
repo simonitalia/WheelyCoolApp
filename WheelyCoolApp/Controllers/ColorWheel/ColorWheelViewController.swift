@@ -13,13 +13,11 @@ class ColorWheelViewController: UIViewController {
     
     //MARK: - Class Properties
     
-    var colors: [Color]? //property passed in from senderVC
+    var colors: [Color]? //receiving object passed in from senderVC
     
     //UI objects
     private lazy var wheelView = SKView()
     private lazy var spinButton = UIButton()
-    
-    //SKScene objets
     private lazy var scene = SKScene()
     
     private lazy var wheel: SKShapeNode = {

@@ -42,7 +42,7 @@ class Yellow: Color {
 
 
 
-//MARK: - Seconday Colors
+//MARK: - Secondary Colors
 
 class Orange: Color {
     let baseColors: [Color]
